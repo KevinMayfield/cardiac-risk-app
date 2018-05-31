@@ -107,7 +107,7 @@
   */
   hscrp_in_mg_per_l = function(v){
     // TODO KGM Don't have test data with hscrp so using dummy result
-    if (v=== undefined) return 0.10;
+    if (v=== undefined) return 2.90;
     if (v.valueQuantity.unit === "mg/L"){
       return parseFloat(v.valueQuantity.value);
     }
