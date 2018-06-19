@@ -18,3 +18,10 @@ See app in [SMART's Gallery](https://gallery.smarthealthit.org/boston-childrens-
 # Screenshot #
 
 ![Screenshot](https://raw.github.com/sethrylan/fhir_cardiac_risk/gh-pages/screenshot.png)
+
+
+```
+docker build -t thorlogic/cardiac .
+
+docker push thorlogic/cardiac
+```

@@ -2,7 +2,8 @@
   "name": "cardiacrisk",
   "version": "0.1.0",
   "scripts": {
-    "serve": "http-server -p 8000 -c-1 ."
+    "serve": "http-server -p 8000 -c-1 .",
+    "start": "npm run serve"
   },
   "dependencies": {
     "fhirclient": "^0.1.9"
