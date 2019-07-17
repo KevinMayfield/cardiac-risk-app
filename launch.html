@@ -4,9 +4,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Cardiac Risk SMART Application</title>
     <script src="node_modules/fhirclient/fhir-client.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
+      var clientId="fhir-smart-app-test";
+      var secret="mysecret";
+      var state = Math.round(Math.random()*100000000).toString();
+      sessionStorage[state] = JSON.stringify({
+        clientId: clientId,
+        secret: secret
+      });
       FHIR.oauth2.authorize({
-        "client_id": "cardiac_risk",
+        "client_id": clientId,
         "scope":  "patient/*.read"
       });
     </script>
